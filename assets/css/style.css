@@ -526,7 +526,7 @@ section {
 }
 .about .video-box {
   background: url("../img/logoieee.jpg") center center no-repeat;
-  background-size: 10;
+  background-size: 35vw;
   min-height: 400px;
 }
 .about .play-btn {
