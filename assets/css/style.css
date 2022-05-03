@@ -346,11 +346,7 @@ h1, h2, h3, h4, h5, h6 {
   left: 0;
   right: 0;
 }
-.hero-container{
-  background-image: url('/images/heading_bg.jpg');
-  height: 100%;
-  width: 100%;
-}
+
 #hero .hero-container {
   position: absolute;
   bottom: 0;
