@@ -5,19 +5,11 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>IEEE CBIT</title>
+  <title>IEEE CBIT SB</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <style>
-
-body{ margin:0; font:normal 75% Arial, Helvetica, sans-serif; } canvas{ display: block; vertical-align: bottom; } /* ---- particles.js container ---- */ #particles-js{ position:absolute; width: 100%; height: 100%; background-color: #111111; background-image: url(""); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; } /* ---- stats.js ---- */ .count-particles{ background: #000022; position: absolute; top: 48px; left: 0; width: 80px; color: #13E8E9; font-size: .8em; text-align: left; text-indent: 4px; line-height: 14px; padding-bottom: 2px; font-family: Helvetica, Arial, sans-serif; font-weight: bold; } .js-count-particles{ font-size: 1.1em; } #stats, .count-particles{ -webkit-user-select: none; margin-top: 5px; margin-left: 5px; } #stats{ border-radius: 3px 3px 0 0; overflow: hidden; } .count-particles{ border-radius: 0 0 3px 3px; }
-#heading, #particles-js{
-  position: absolute;
-}
-#heading{
-  z-index: 100;
-}
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
 
@@ -33,18 +25,18 @@ body {
 #ieee {
   position: absolute;
   left: 50%;
-  top: 30%;
+  top: 40%;
   transform: translate(-50%, -50%);
   display: block;
   color: #006598;
-  font-size: 13vw;
+  font-size: 9vw;
   letter-spacing: 8px;
   font-weight: 550;
   cursor: pointer;
 }
 
 #ieee::before {
-  content: "IEEECBITSB";
+  content: "IEEE CBIT";
   position: absolute;
   color: transparent;
   background-image: repeating-linear-gradient(
@@ -54,6 +46,7 @@ body {
     white 2px,
     white 4px
   );
+  background-clip: border-box;
   -webkit-background-clip: text;
   top: 0px;
   left: 0;
@@ -62,7 +55,7 @@ body {
 }
 
 #ieee::after {
-  content: "IEEECBITSB";
+  content: "IEEE CBIT";
   position: absolute;
   color: transparent;
   background-image: repeating-linear-gradient(
@@ -72,23 +65,22 @@ body {
     white 2px,
     white 4px
   );
+  background-clip: border-box;
   -webkit-background-clip: text;
   top: 0px;
   left: 0px;
   transition: 1s;
 }
 
-#ieee:hover:before {
+/* #ieee:hover:before {
   top: 10px;
   left: 10px;
-}
+} */
 
-#ieee:hover:after {
+/* #ieee:hover:after {
   top: -10px;
   left: -10px;
-} 
-
-
+}  */
 
 </style>
   
@@ -165,13 +157,16 @@ body {
 
   <!-- ======= Hero Section ======= -->
   <section id="hero">
-    <div class="hero-container" data-aos="fade-up" id="particles-js">
+
+    <div class="hero-container" data-aos="fade-up"> 
+      <video width="100%" height=auto autoplay muted src="images/bg_vid.mp4" type="video/mp4/" style="position: relative; z-index: 0;">
+      </video>
       <div id = "heading">
-        <span id = "ieee">IEEECBITSB</span>
+        <span id = "ieee">IEEE CBIT</span>
         <br><br><br><br><br><br><br><br>
-        <h2>Advancing Technology for Humanity</h2>
       </div>
     </div>
+    
 
   </section><!-- End Hero -->
 
